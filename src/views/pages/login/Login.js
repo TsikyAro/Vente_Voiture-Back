@@ -21,8 +21,8 @@ const Login = () => {
   const[motdepasse,setMotdepasse] = useState();
   const OnClickButton=()=>{
     const data = {
-      mail,
-      motdepasse
+      mail: "arotsiky59@gmail.com",
+      motdepasse :"1230!"
     }
     useAddObjectLogin("compte",data);
   }
@@ -42,7 +42,7 @@ const Login = () => {
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
-                      <CFormInput placeholder="Email" autoComplete="email"  value={mail} onChange={(e)=>{setEmail(e.target.value)}}/>
+                      <CFormInput placeholder="Email" autoComplete="email" defaultValue="arotsiky59@gmail.com" value={mail} onChange={(e)=>{setEmail(e.target.value)}}/>
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupText>
@@ -53,6 +53,7 @@ const Login = () => {
                         placeholder="Password"
                         autoComplete="current-password"
                         value={motdepasse} onChange={(e)=>{setMotdepasse(e.target.value)}}
+                        defaultValue="1230!"
                       />
                     </CInputGroup>
                     <CRow>
