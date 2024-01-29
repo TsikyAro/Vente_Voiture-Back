@@ -9,7 +9,7 @@ export default function useObject(apiName) {
       setObjects(data);
     };
     fetchData();
-  }, []);
+  }, [apiName]);
 
   return [objects];
 }
